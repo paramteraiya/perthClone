@@ -1,0 +1,568 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("../assets/fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/ProximaNovaT-Thin.woff2") format("woff2"),
+    url("../assets/fonts/ProximaNovaT-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/ProximaNova-Extrabld.woff2") format("woff2"),
+    url("../assets/fonts/ProximaNova-Extrabld.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/ProximaNova-Bold.woff2") format("woff2"),
+    url("../assets/fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Jack";
+  src: url("../assets/fonts/BlackJack.woff2") format("woff2"),
+    url("../assets/fonts/BlackJack.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #7e7e7e;
+  font-family: "Proxima Nova", sans-serif;
+}
+h1 {
+  font-size: 70px;
+  line-height: 90px;
+  font-family: "Black Jack";
+  font-weight: 400;
+}
+h2 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
+}
+h3 {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 45px;
+}
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+h5 {
+  font-weight: 400;
+  font-size: 16px;
+}
+h6 {
+  font-weight: 400;
+  font-size: 12px;
+  color: #545454;
+}
+a {
+  color: #6dc5ea;
+  text-decoration: none;
+}
+a:hover {
+  color: #14af8f;
+}
+blockquote {
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 6px solid #4dabdd;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.clearfix {
+  display: block;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  width: 100%;
+}
+
+.button a {
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 25px;
+  padding: 12px 22px;
+  border: 2px solid #14af8f;
+  color: #14af8f;
+  background-color: transparent;
+  border-radius: 2px;
+  display: inline-block;
+}
+.button a span.text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.button a i.fa {
+  margin-left: 17px;
+  vertical-align: middle;
+}
+.button.white a {
+  color: #fff;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.button a:hover,
+.button.white a:hover {
+  color: #fff;
+  background-color: #14af8f;
+  border-color: transparent;
+}
+.button.pink a {
+  color: #e94b89;
+  background-color: transparent;
+  border-color: #e94b89;
+}
+.button.pink a:hover,
+.button.hover-pink a:hover {
+  color: #fff;
+  background-color: #e94b89;
+  border-color: transparent;
+}
+
+/* Header */
+header {
+  background: url(../assets/images/bg-pattern.jpg) top left repeat;
+}
+
+.logo {
+  float: left;
+}
+
+.site-navigation {
+  float: right;
+}
+button.navigation-trigger {
+  font-size: 30px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 34px;
+}
+.navigation {
+  display: none;
+}
+
+.hero-section {
+  background: url(../assets/images/bg-pattern.jpg) top left repeat;
+  padding-top: 56px;
+  color: #ffffff;
+}
+.hero-section h1 {
+  margin: 0;
+}
+
+.hero-section .wrapper .right-content {
+  float: right;
+  text-align: right;
+}
+
+.hero-section .wrapper .left-image {
+  float: left;
+  max-height: 268px;
+  overflow: hidden;
+}
+.hero-section .button {
+  display: inline-block;
+}
+
+/*About us*/
+
+.about-section {
+  background-color: #f4f4f4;
+  padding-top: 140px;
+}
+
+.about-section .left-content {
+  float: left;
+  width: 60%;
+  text-align: right;
+}
+.about-section .left-content h2 {
+  margin-top: 0;
+}
+.about-section .left-content .max-container {
+  max-width: 521px;
+  /* display: inline-block; */
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-section .right-image {
+  float: right;
+  max-height: 500px;
+  overflow: hidden;
+}
+.about-section .button {
+  margin-top: 70px;
+}
+
+/*Dribbble Section*/
+.dribbble-section {
+  padding: 105px 0 240px;
+  background: url(../assets/images/all-devices.png) bottom left no-repeat;
+  background-position: left bottom -60px;
+}
+.dribbble-section h2 {
+  margin-top: 0;
+}
+.dribbble-section .wrapper .right-content {
+  float: right;
+  width: 100%;
+  max-width: 370px;
+}
+.dribbble-section .button {
+  margin-top: 70px;
+}
+
+/*Buy Me Beer*/
+.buy-me-beer-section {
+  background: url(../assets/images/cta-strip-bg.jpg) center center repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+.buy-me-beer-section h3 {
+  margin-top: 0;
+}
+
+/*email-section*/
+.email-section {
+  padding: 245px 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.email-section .logos a {
+  width: 50px;
+  height: 50px;
+  border: 2px solid;
+  color: #535353;
+  line-height: 50px;
+  margin: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.email-input form {
+  margin-top: 60px;
+}
+.email-input form label {
+  display: inline-block;
+  vertical-align: middle;
+  color: #545454;
+  font-style: italic;
+  font-weight: 700;
+}
+.email-input form .input-submit {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 15px;
+}
+::placeholder {
+  opacity: 0.5;
+  font-style: italic;
+} /*
+         .vertical { 
+            border-left: 6px solid black; 
+            height: 200px; 
+            position:absolute; 
+            left: 50%; 
+        }  */
+
+.email-input form .input-submit input,
+button {
+  background: #fff;
+  border: none;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 15px;
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+}
+.email-input i.fa.fa-envelope {
+  color: #6dc5ea;
+  border-left: 3px solid #f4f4f4;
+  padding-left: 17px;
+}
+
+/*footer*/
+.footer-section {
+  padding: 40px 0;
+  font-size: 12px;
+  color: #000000;
+}
+.footer-section .wrapper .copyrights {
+  text-align: center;
+}
+/* 
+Desktop:
+1920
+1600
+1466
+1366
+1280
+
+Tablet:
+1024
+768
+
+Mobile:
+640
+560
+480
+414
+375
+360
+320
+*/
+
+/* media query  */
+/* 1080 - 900
+992 - 700
+762 - 100%
+429 */
+
+@media (max-width: 1080px) {
+  .wrapper {
+    max-width: 900px;
+  }
+  /* .dribbble-section .button {
+    margin-left: 45px;
+  } */
+}
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 700px;
+  }
+  .hero-section {
+    padding-top: 15px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 12px;
+  }
+  .about-section .left-content{
+    width: 50%;
+    margin-left: 15px;
+  }
+  .about-section .right-image {
+    margin-top: 20px;
+  }
+  .about-section {
+    padding-top: 100px;
+  }
+  .dribbble-section {
+    background-size: 66% 50%;
+  }
+  .dribbble-section .button {
+    margin-top: 45px;
+  }
+  .email-section{
+    padding: 150px 0;
+  }
+
+}
+
+@media (max-width: 762px) {
+  .wrapper {
+    width: 100%;
+    margin:0 auto;
+  }
+  body {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+  .about-section {
+    padding-top: 50px;
+  }
+  .about-section .button {
+    margin-top: 50px;
+  }
+  .about-section .left-content {
+    width: 46%;
+  }
+  .about-section .right-image {
+    width: 50%;
+  }
+  .email-section{
+    padding: 100px 0;
+  }
+}
+
+@media (max-width:479px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  body {
+    font-size: 10px;
+    }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+  .button a span.text {
+    font-size: 12px;
+  }
+  .hero-section .wrapper .left-image {
+    max-height: 170px;
+    max-width: 170px;
+    padding-left: 5px;
+  }
+  .hero-section .wrapper .right-content {
+    padding-right: 3px;
+  }
+  .dribbble-section {
+    padding: 50px 0;
+    background: none;
+    /* background-size: 80% 60%; */
+  }
+  .button a {
+    line-height: 0;
+    padding: 11px 15px;
+  }
+  .about-section .right-image{
+    display: none;
+  }
+  .email-input form label {
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+  .buy-me-beer-section {
+    padding: 75px 0;
+  }
+  .email-section {
+    padding: 80px 0;
+  }
+  .email-section .logos a {
+    margin: 0 3px;
+  }
+  .email-input form .input-submit {
+    margin: 0;
+  }
+  .footer-section {
+    padding: 20px 0;
+  }
+  .about-section .left-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 0 4px;
+  }
+  .container-fluid.clearfix {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-content .clearfix {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
